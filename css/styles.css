@@ -1,4 +1,4 @@
-/* =========== ЗАГАЛЬНІ СТИЛІ ========== */
+/*! =========== ЗАГАЛЬНІ СТИЛІ ========== */
 *,
 *::before,
 *::after {
@@ -90,9 +90,16 @@ body {
     margin-right: auto;
 }
 
+.icon {
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 /**!=========== СТИЛІ ДЛЯ index.html ========== */
-/* =========== ШАПКА САЙТУ ========== */
+/** =========== ШАПКА САЙТУ ========== */
 
 .page-header {
     border-bottom: 1px solid var(--accent-color);
@@ -164,17 +171,16 @@ body {
 
 /* !=========== ОСНОВНИЙ КОНТЕНТ ========== */
 
-/* =========== СЕКЦІЯ ГЕРОЙ ========== */
+/** =========== СЕКЦІЯ ГЕРОЙ ========== */
 .hero {
     text-align: center;
     background-color: var(--hero-background-color);
     padding-top: 188px;
     padding-bottom: 188px;
+
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -212,7 +218,7 @@ body {
     background-color: var(--pressed-state-color);
 }
 
-/* =========== ПЕРЕЛІК ПЕРЕВАГ ========== */
+/** =========== ПЕРЕЛІК ПЕРЕВАГ ========== */
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -244,7 +250,11 @@ body {
     margin-right: var(--card-set-gap);
 }
 
-/* =========== НАШІ ПРОЕКТИ ==========  */
+.icon {
+    fill: var(--dark-color);
+}
+
+/** =========== НАШІ ПРОЕКТИ ==========  */
 .proj-list {
     display: flex;
 }
@@ -253,7 +263,7 @@ body {
     margin-right: var(--card-set-gap);
 }
 
-/* =========== ЧЛЕНИ КОМАНДИ ========== */
+/** =========== ЧЛЕНИ КОМАНДИ ========== */
 .team-list {
     display: flex;
     text-align-last: center;
@@ -271,12 +281,67 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* =========== ПІДВАЛ ========== */
+.soc-list {
+    margin-top: 8px;
+    display: flex;
+    gap: 24px;
+    /* justify-content: center; */
+}
+
+.soc-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primery-brand-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+    background-color: var(--pressed-state-color);
+}
+
+.soc-icon {
+    fill: var(--primery-bcg-color);
+}
+
+/** =========== Клієнти ========== */
+.customers {
+    text-align: center;
+}
+
+.customers-list {
+    display: flex;
+    gap: var(--card-set-gap);
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.customers-logo {
+    border: 1px solid var(--subtle-text-color);
+    border-radius: 4px;
+    fill: var(--subtle-text-color);
+}
+
+.customers-logo:hover,
+.customers-logo:focus {
+    fill: var(--pressed-state-color);
+    border-color: var(--pressed-state-color);
+}
+
+
+/*! =========== ПІДВАЛ ========== */
 .page-footer {
     background-color: var(--modal-overlay-color);
     color: var(--accent-color);
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.footer-conteiner {
+    display: flex;
 }
 
 .page-footer .link,
@@ -295,8 +360,40 @@ body {
     width: 264px;
 }
 
+.soc-media {
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.soc-media-text {
+    margin-bottom: 24px;
+}
+
+.soc-media-list {
+    display: flex;
+    gap: 24px;
+}
+
+
+.cos-media-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--subtle-text-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.cos-media-link:hover,
+.cos-media-link:focus {
+    background-color: var(--succes-color);
+}
+
+/* .footer-logo {margin-left: ;} */
+
 /**! =========== СТИЛІ ДЛЯ portfolio.html ========= */
-/* ========== Список можливостей ========= */
+/** ========== Список можливостей ========= */
 .capability {
     padding-top: 96px;
     padding-bottom: 120px;
