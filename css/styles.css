@@ -312,6 +312,12 @@ body {
     text-align: center;
 }
 
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+}
+
 .customers-list {
     display: flex;
     gap: var(--card-set-gap);
@@ -319,14 +325,16 @@ body {
     margin-top: 72px;
 }
 
-.customers-logo {
+.customers-link {
+    display: block;
     border: 1px solid var(--subtle-text-color);
     border-radius: 4px;
     fill: var(--subtle-text-color);
+    padding: 16px 32px;
 }
 
-.customers-logo:hover,
-.customers-logo:focus {
+.customers-link:hover,
+.customers-link:focus {
     fill: var(--pressed-state-color);
     border-color: var(--pressed-state-color);
 }
