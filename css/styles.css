@@ -281,6 +281,14 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.photo-team-decor {
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    border-top: none;
+    padding: 32px 16px;
+    background-color: var(--primery-bcg-color);
+}
+
 .soc-list {
     margin-top: 8px;
     display: flex;
@@ -301,6 +309,7 @@ body {
 .soc-link:hover,
 .soc-link:focus {
     background-color: var(--pressed-state-color);
+
 }
 
 .soc-icon {
